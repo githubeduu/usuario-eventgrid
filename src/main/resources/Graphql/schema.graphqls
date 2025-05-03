@@ -1,0 +1,17 @@
+type Query {
+  _dummy: String
+}
+
+type Mutation {
+  createUsuario(input: UsuarioCreateInput!): String
+}
+
+input UsuarioCreateInput {
+  username: String!
+  password: String!
+  nombre: String!
+  rut: String!
+  direccion: String!
+  comuna: String!
+  rolId: Int!
+}

@@ -12,7 +12,7 @@ import com.example.usuario_eventgrid.service.EventGridPublisherService;
 
 @RestController
 @RequestMapping("/usuario")
-public class EmailController {
+public class UsuarioController {
 
     @Autowired
     private EventGridPublisherService publisherService;
