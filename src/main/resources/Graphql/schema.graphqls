@@ -4,6 +4,8 @@ type Query {
 
 type Mutation {
   createUsuario(input: UsuarioCreateInput!): String
+  updateUsuario(id: ID!, input: UsuarioUpdateInput!): String
+  deleteUsuario(id: ID!, input: String!): String
 }
 
 input UsuarioCreateInput {
@@ -15,3 +17,11 @@ input UsuarioCreateInput {
   comuna: String!
   rolId: Int!
 }
+
+input UsuarioUpdateInput {
+  contrasena: String
+  direccion: String
+  comuna: String
+  rolId: Int
+}
+
