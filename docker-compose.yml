@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  microservicio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+    restart: always
